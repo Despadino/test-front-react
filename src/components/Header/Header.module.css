@@ -1,0 +1,71 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background: var(--sidebar-bg);
+  backdrop-filter: var(--blur-bg);
+  border-bottom: 1px solid var(--border-glow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  z-index: 30;
+}
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.right {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.navLink {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: var(--transition-smooth);
+}
+
+.navLink:hover {
+  color: var(--accent-glow);
+}
+
+.userEmail {
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  background: rgba(59,130,246,0.2);
+  padding: 0.3rem 0.8rem;
+  border-radius: 40px;
+}
+
+.logoutButton {
+  background: transparent;
+  border: 1px solid var(--border-glow);
+  padding: 0.3rem 1rem;
+  border-radius: 40px;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.logoutButton:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin-left: 0;
+    width: 100%;
+    padding: 0 1rem;
+  }
+}

@@ -1,0 +1,55 @@
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.card {
+  background: var(--bg-card);
+  backdrop-filter: blur(8px);
+  border-radius: var(--border-radius-lg);
+  padding: 2rem;
+  border: 1px solid var(--border-glow);
+}
+
+.settingItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+}
+
+.settingItem:last-child {
+  border-bottom: none;
+}
+
+.toggle {
+  width: 52px;
+  height: 28px;
+  background: #2d3748;
+  border-radius: 40px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.toggle.active {
+  background: linear-gradient(95deg, var(--accent-primary), var(--accent-secondary));
+}
+
+.toggle::after {
+  content: '';
+  width: 22px;
+  height: 22px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  transition: 0.2s;
+}
+
+.toggle.active::after {
+  transform: translateX(24px);
+}
