@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.profileCard {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  border-radius: var(--border-radius-lg);
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid var(--border-glow);
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition-smooth);
+}
+
+.profileCard:hover {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 32px rgba(59,130,246,0.2);
+}
+
+.avatar {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.subscriptionsTitle {
+  margin: 1.5rem 0 1rem;
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-glow);
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.subscriptionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 0.5rem;
+}
+
+.subscriptionItem {
+  background: rgba(59, 130, 246, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius-sm);
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1rem;
+}
+
+.noSubscriptions {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin: 1rem 0;
+}
+
+.privateMessage {
+  color: var(--text-secondary);
+  margin: 1rem 0;
+  font-style: italic;
+}
+
+.logoutButton {
+  margin-top: 1rem;
+}

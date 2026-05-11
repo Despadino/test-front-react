@@ -1,0 +1,13 @@
+.card {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  border-radius: var(--border-radius-lg);
+  padding: 2rem;
+  border: 1px solid var(--border-glow);
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition-smooth);
+}
+.card:hover {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 32px rgba(59,130,246,0.2);
+}

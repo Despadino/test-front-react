@@ -47,25 +47,37 @@
   border-radius: 40px;
 }
 
-.logoutButton {
-  background: transparent;
-  border: 1px solid var(--border-glow);
-  padding: 0.3rem 1rem;
-  border-radius: 40px;
-  color: var(--text-secondary);
-  cursor: pointer;
-  transition: var(--transition-smooth);
-}
-
-.logoutButton:hover {
-  border-color: var(--accent-primary);
-  color: var(--accent-primary);
-}
-
 @media (max-width: 768px) {
   .header {
     margin-left: 0;
     width: 100%;
     padding: 0 1rem;
   }
+}
+
+.navLink.active {
+  color: var(--accent-glow);
+  text-shadow: 0 0 6px rgba(56, 189, 248, 0.5);
+  position: relative;
+}
+
+.navLink.active::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: 2px;
+}
+
+/* добавить в конец файла */
+.balance {
+  background: rgba(255, 215, 0, 0.2);
+  color: #fbbf24;
+  padding: 0.3rem 0.8rem;
+  border-radius: 40px;
+  font-size: 0.9rem;
+  font-weight: 600;
 }

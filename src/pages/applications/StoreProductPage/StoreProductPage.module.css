@@ -1,0 +1,71 @@
+/* src/pages/applications/StoreProductPage/StoreProductPage.module.css */
+.backButton {
+  background: transparent;
+  border: 1px solid var(--border-glow);
+  color: var(--text-secondary);
+  padding: 8px 20px;
+  border-radius: 40px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  transition: var(--transition-smooth);
+  font-size: 0.9rem;
+}
+
+.backButton:hover {
+  border-color: var(--accent-primary);
+  color: var(--accent-primary);
+  transform: translateX(-4px);
+}
+
+.productCard {
+  background: var(--bg-card);
+  backdrop-filter: blur(12px);
+  border-radius: var(--border-radius-lg);
+  padding: 2rem;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid var(--border-glow);
+}
+
+.emoji {
+  font-size: 5rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.price {
+  font-size: 1.2rem;
+  color: var(--accent-glow);
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.subscribeButton {
+  background: linear-gradient(95deg, var(--accent-primary), var(--accent-secondary));
+  border: none;
+  padding: 12px 28px;
+  border-radius: 40px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.subscribeButton:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+}

@@ -1,3 +1,4 @@
+// src/components/Layout/FullLayout.tsx
 import { Outlet } from 'react-router-dom';
 import Header from '../Header/Header';
 import styles from './FullLayout.module.css';

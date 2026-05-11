@@ -1,3 +1,4 @@
+// src/components/Layout/DefaultLayout.tsx
 import { Outlet } from 'react-router-dom';
 import Sidebar from '../Sidebar/Sidebar';
 import Header from '../Header/Header';
